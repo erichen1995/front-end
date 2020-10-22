@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    * {
+      xbackground-color: rgb(0,0,0,.1);
+      box-shadow: 0 0 1px red;
+    }
+    table {
+      overflow: hidden;
+      border-collapse: collapse;
+    }
+    td {
+      position: relative;
+    }
+    tr:hover {
+      background-color: gold;
+    }
+    td::after {
+      content: '';
+      background-color: gold;
+      height: 9999px;
+      width: 23px;
+      top:-999px;
+      left:0;
+      position: absolute;
+      opacity: 0;
+      z-index: -5;
+    }
+    td:hover::after {
+      opacity: 1;
+      z-index: -1;
+    }
+
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>aa</td>
+      <td>aa</td>
+      <td>aa</td>
+      <td>aa</td>
+      <td>aa</td>
+      <td>aa</td>
+    </tr>
+    <tr>
+      <td>bb</td>
+      <td>bb</td>
+      <td>bb</td>
+      <td>bb</td>
+      <td>bb</td>
+      <td>bb</td>
+    </tr>
+    <tr>
+      <td>cc</td>
+      <td>cc</td>
+      <td>cc</td>
+      <td>cc</td>
+      <td>cc</td>
+      <td>cc</td>
+    </tr>
+    <tr>
+      <td>dd</td>
+      <td>dd</td>
+      <td>dd</td>
+      <td>dd</td>
+      <td>dd</td>
+      <td>dd</td>
+    </tr>
+    <tr>
+      <td>ee</td>
+      <td>ee</td>
+      <td>ee</td>
+      <td>ee</td>
+      <td>ee</td>
+      <td>ee</td>
+    </tr>
+    <tr>
+      <td>ff</td>
+      <td>ff</td>
+      <td>ff</td>
+      <td>ff</td>
+      <td>ff</td>
+      <td>ff</td>
+    </tr>
+  </table>
+</body>
+</html>

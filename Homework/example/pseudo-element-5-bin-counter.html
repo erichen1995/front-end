@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>bin-counter</title>
+  <style>
+    * {
+      background-color: rgb(0,0,0,.1);
+      box-shadow: 0 0 1px red;
+    }
+
+    [namber='b1']:checked{
+      counter-increment: bin 1;
+    }
+    [namber='b2']:checked{
+      counter-increment: bin 2;
+    }
+    [namber='b4']:checked{
+      counter-increment: bin 4;
+    }
+    [namber='b8']:checked{
+      counter-increment: bin 8;
+    }
+    [namber='b16']:checked{
+      counter-increment: bin 16;
+    }
+    span::after {
+      content: counter(bin);
+    }
+  </style>
+</head>
+<body>
+  <input type="checkbox" namber="b16">
+  <input type="checkbox" namber="b8">
+  <input type="checkbox" namber="b4">
+  <input type="checkbox" namber="b2">
+  <input type="checkbox" namber="b1">
+  <span>结果是：</span>
+</body>
+</html>

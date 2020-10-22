@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>counter-nest</title>
+  <style>
+    ul {
+      list-style: none;
+      xcounter-reset: a;
+    }
+    li {
+      counter-increment: a;
+    }
+    /* 分开嵌套 
+      需要注意ul，li的层级关系。如果选择器没有选中，可能就是层级写错了
+    */
+    /* li::before {
+      content: counter(a) ". ";
+    }
+    li li {
+      counter-increment: b;
+    }
+    li li::before {
+      content: counter(a) "." counter(b) ". ";
+    }
+    li li li {
+      counter-increment: c;
+    }
+    li li li::hover {
+      content: counter(a) "." counter(b) "." counter(c) ". ";
+    } */
+
+    /* counters */
+    li::before {
+      content: counters(a, ".") ". ";
+    }
+    ul {
+      counter-reset: a;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>lorem</li>
+    <li>Bobis
+      <ul>
+        <li>dsftw</li>
+        <li>nwhdc
+          <ul>
+            <li>ggher</li>
+            <li>hhsrt</li>
+          </ul>
+        </li>
+        <li>iusfefr</li>
+      </ul>
+    </li>
+    <li>llooo</li>
+    <li>svsgtt</li>
+    <li>jryssg</li>
+  </ul>
+</body>
+</html>
