@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    div {
+      width: 514px;
+      border: 2px solid red;
+      overflow: hidden;
+    }
+    span {
+      float: left;
+      border: 1px solid blue;
+      margin: 10px;
+      text-align: center;
+      line-height: 150px;
+      width: 150px;
+      height: 150px;
+      float: left;
+    }
+    /* .a1, .a2, .a3, .a5, .a6, .a7, .a8, .a9, .a10, .a12 {
+      width: 150px;
+      height: 150px;
+    }
+    .a4, .a11 {
+      width: 320px;
+      height: 320px;
+      line-height: 320px;
+    }
+    .a11 {
+      float: right;
+    } */
+    span:nth-child(12n+4) {
+      width: 320px;
+      height: 320px;
+      line-height: 320px;
+    }
+    span:nth-child(12n+11) {
+      width: 320px;
+      height: 320px;
+      line-height: 320px;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span class="a1">1</span>
+    <span class="a2">2</span>
+    <span class="a3">3</span>
+    <span class="a4">4</span>
+    <span class="a5">5</span>
+    <span class="a6">6</span>
+    <span class="a7">7</span>
+    <span class="a8">8</span>
+    <span class="a9">9</span>
+    <span class="a10">10</span>
+    <span class="a11">11</span>
+    <span class="a12">12</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkbox-style-update</title>
+  <style>
+    input {
+      display: none;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: auto;
+      position: relative;
+    }
+    label {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 25px;
+      border: 1px solid #eee;
+      border-radius: 25px;
+      background-color: #fff;
+      transition:  .5s;
+    }
+    span {
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      /* border: 1px solid red; */
+      border-radius: 20px;
+      top: 50%;
+      margin-left: 2.5px;
+      transform: translateY(-50%);
+      box-shadow: 0px 0px 3px black;
+      transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s;
+      transition: left 0.3s; 
+    }
+    /* input:checked + label {
+      background-color: rgb(48,243,73);
+      border-color: rgb(48,243,73);
+    } */
+    input:checked + label>span {
+      background-color: white;
+      margin-left: 27.5px;
+      box-shadow: #64bd63 0 0 0 16px inset;
+    transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
+    transition: left 0.3s;
+    }
+    </style>
+</head>
+<body>
+  <div>
+    <input type="checkbox" name="switch" id="switch">
+    <label for="switch">
+      <span></span>
+    </label>
+  </div>
+  </body>
+</html>

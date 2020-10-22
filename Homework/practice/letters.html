@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fancy letterheaded paper</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: auto;
+        background: #ccc;
+      }
+
+      article {
+        width: 210mm;
+        height: 297mm;
+        background-color: #fff;
+        border: 1px solid black;
+        background: linear-gradient(180deg, rgba(0,0,0,0.1), white 20%, white 80%, rgba(0,0,0,0.1));
+        margin: 20px auto;
+        position: relative;
+      }
+
+      address {
+        position: absolute;
+        bottom: 8mm;
+        right: 20mm;
+      }
+
+      h1 {
+        position: absolute;
+        top: 12mm;
+        left: 20mm;
+        width: 128px;
+        height: 128px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 44px 0;
+        color: white;
+        top:
+        text-shadow: 1px 1px 1px black;
+        background-image: url('https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/logo.png');
+      }
+      header img, footer img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+      footer img {
+        position: absolute;
+        bottom: 0mm;
+      }
+
+/* Your CSS below here */
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <img src="https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/top-image.png" alt="">
+      </header>
+      <h1>Awesome<br>Company</h1>
+
+      <address>
+        <p>The Awesome Company</p>
+        <p>102-112 Frail Bend Bridge<br>
+        The Dwindlings<br>
+        Little Hornet<br>
+        HX3 9ZQ<br>
+        UK</p>
+      </address>
+      <footer>
+        <img src="https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/bottom-image.png" alt="">
+    </footer>
+    </article>
+  </body>
+</html>

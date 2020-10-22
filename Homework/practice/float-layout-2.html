@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      background-color: rgba(0,0,0,.1);
+      box-shadow: 0 0 1px red;
+    }
+    section {
+      width: 1226px;
+      overflow: hidden;
+      margin: auto;
+    }
+    div {
+      overflow: hidden;
+      margin: -7px;
+    }
+    span {
+      box-sizing: border-box;
+      float: left;
+      border: 1px solid blue;
+      margin: 7px;
+      text-align: center;
+    }
+    span:first-child {
+      height: 614px;
+      width: 234px;
+      line-height: 614px;
+    }
+    span:nth-child(n+2):not(:nth-last-child(-n+2)) {
+      width: 234px;
+      height: 300px;
+      line-height: 300px;
+    }
+    span:nth-last-child(-n+2) {
+      width: 234px;
+      height: 143px;
+      line-height: 143px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>10</span>
+    </div>
+  </section>
+</body>
+</html>

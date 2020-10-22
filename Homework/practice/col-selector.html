@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    * {
+      xbackground-color: rgb(0,0,0,.1);
+      xbox-shadow: 0 0 1px red;
+    }
+    div {
+      width: 180px;
+      background-color: gray;
+      position: relative;
+      z-index: 55;
+      overflow: hidden;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      position: relative;
+      height: 30px;
+      width: 30px;
+    }
+    span {
+      top: -999px;
+      left: 0;
+      position: absolute;
+      width: 30px;
+      height: 9999px;
+      background-color: gold;
+      opacity: 0;
+      z-index: -100;
+    }
+    tr:hover {
+      background-color: gold;
+    }
+    td:hover span {
+      opacity: 1;
+      z-index: -1;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <table>
+      <tr>
+        <td>aa<span></span></td>
+        <td>aa<span></span></td>
+        <td>aa<span></span></td>
+        <td>aa<span></span></td>
+        <td>aa<span></span></td>
+        <td>aa<span></span></td>
+      </tr>
+      <tr>
+        <td>bb<span></span></td>
+        <td>bb<span></span></td>
+        <td>bb<span></span></td>
+        <td>bb<span></span></td>
+        <td>bb<span></span></td>
+        <td>bb<span></span></td>
+      </tr>
+      <tr>
+        <td>cc<span></span></td>
+        <td>cc<span></span></td>
+        <td>cc<span></span></td>
+        <td>cc<span></span></td>
+        <td>cc<span></span></td>
+        <td>cc<span></span></td>
+      </tr>
+      <tr>
+        <td>dd<span></span></td>
+        <td>dd<span></span></td>
+        <td>dd<span></span></td>
+        <td>dd<span></span></td>
+        <td>dd<span></span></td>
+        <td>dd<span></span></td>
+      </tr>
+      <tr>
+        <td>ee<span></span></td>
+        <td>ee<span></span></td>
+        <td>ee<span></span></td>
+        <td>ee<span></span></td>
+        <td>ee<span></span></td>
+        <td>ee<span></span></td>
+      </tr>
+      <tr>
+        <td>ff<span></span></td>
+        <td>ff<span></span></td>
+        <td>ff<span></span></td>
+        <td>ff<span></span></td>
+        <td>ff<span></span></td>
+        <td>ff<span></span></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
