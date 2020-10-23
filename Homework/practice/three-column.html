@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>three column</title>
+  <style>
+    * {
+      background-color: rgba(0, 0, 0, .1);
+      box-shadow: 0 0 1px red;
+    }
+    /* table实现 */
+    /* section {
+      display: table;
+    }
+    header, main, footer {
+      display: table-cell;
+    } */
+
+    /* flex实现 */
+    /* section {
+      display: flex;
+    }
+    header {
+      width: 50%;
+      background-color: tan;
+    }
+    main {
+      background-color: salmon;
+    }
+    footer {
+      background-color: pink;
+    } */
+
+    /* float配合BFC */
+    section {
+      overflow: hidden;
+    }
+    header {
+      float: left;
+      width: 25%;
+      background-color: tan;
+    }
+    footer {
+      float: right;
+      width: 25%;
+      background-color: pink;
+    }
+    main {
+      overflow: hidden;
+      background-color: yellow;
+    }
+    header, main, footer {
+      padding-bottom: 999px;
+      margin-bottom: -999px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <header>
+      aaaaLorem ipsum dolor  elit. Ab temporibus rem eligendi magnaisi fugiat necessitatibus dolorem obcaecati voluptatem at perferendis distinctio reiciendis?
+    </header>
+    <footer>
+      cccLorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </footer>
+    <main>
+      bbbLorem ipsum dolor sit amet consectetur adipisicing elit. Et, vitae excepturi porro nisi, saepe numquam velit officiis fuga deleniti neque iure laudantium minus voluptate nemo 
+      voluptates Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id expedita magnam temporibus. Quaerat nulla ea deleniti numquam, expedita laborum non minus facere accusamus doloremque voluptatum magni ut quod eius sit.Accusamus magnam rem ea voluptatibus molestias numquam quos at expedita iste, excepturi laborum odit itaque ipsam dolor iusto laboriosam perspiciatis ipsum officia ab aspernatur consequatur unde! Quidem neque aspernatur similique. 
+    </main>
+  </section>
+</body>
+</html>
