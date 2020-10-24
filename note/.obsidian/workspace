@@ -1,0 +1,109 @@
+{
+  "main": {
+    "id": "676126ecd3f8f31e",
+    "type": "split",
+    "children": [
+      {
+        "id": "85530a09e62a6afe",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "20201021+css3选择器.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "92a94b53a594afbf",
+    "type": "split",
+    "children": [
+      {
+        "id": "52f1f9e865bfd254",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aecb80ad2493775d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "2f63606f2816e338",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "word-"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 375,
+    "collapsed": true
+  },
+  "right": {
+    "id": "a02a1d867babfab6",
+    "type": "split",
+    "children": [
+      {
+        "id": "34894152ccdf5bf7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "27e3309dc8e09028",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "20201021+css3选择器.md"
+              }
+            }
+          },
+          {
+            "id": "4a4fdf3566236eae",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "20201021+css3选择器.md"
+              }
+            }
+          },
+          {
+            "id": "55127ce62021cc9b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "20201021+css3选择器.md",
+    "0000-0000.md",
+    "PHP/scanf输入未知字符串.md",
+    "PHP/退出登录时清除session.md",
+    "PHP/图像验证码类.md",
+    "PHP/输出图形.md",
+    "PHP/面向对象.md",
+    "PHP/释放资源-销毁图像.md",
+    "PHP/绘制图形.md",
+    "PHP/创建图像的大致步骤.md"
+  ]
+}

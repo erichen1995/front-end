@@ -1,0 +1,79 @@
+{
+  "theme": "moonstone",
+  "pluginEnabledStatus": {
+    "file-explorer": true,
+    "global-search": true,
+    "switcher": true,
+    "graph": true,
+    "backlink": true,
+    "command-palette": true,
+    "markdown-importer": true,
+    "word-count": true,
+    "custom-css": true,
+    "tag-pane": true,
+    "page-preview": true,
+    "outline": true,
+    "daily-notes": false,
+    "templates": false,
+    "starred": false,
+    "translucency": false,
+    "zk-prefixer": true,
+    "random-note": true,
+    "open-with-default-app": true,
+    "slides": true,
+    "workspaces": false
+  },
+  "strictLineBreaks": false,
+  "alwaysUpdateLinks": true,
+  "vimMode": false,
+  "promptDelete": true,
+  "hotkeys": {
+    "markdown-importer:open": [
+      {
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "k"
+      }
+    ],
+    "explorer:new-file": [],
+    "open-with-default-app:open": [
+      {
+        "modifiers": [
+          "Mod",
+          "Shift"
+        ],
+        "key": "O"
+      }
+    ],
+    "open-with-default-app:show": [
+      {
+        "modifiers": [
+          "Alt",
+          "Shift"
+        ],
+        "key": "O"
+      }
+    ],
+    "zk-prefixer": [
+      {
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "n"
+      }
+    ],
+    "workspace:copy-path": [
+      {
+        "modifiers": [
+          "Alt"
+        ],
+        "key": "c"
+      }
+    ]
+  },
+  "newFileLocation": "current",
+  "attachmentFolderPath": "Img",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": false
+}
