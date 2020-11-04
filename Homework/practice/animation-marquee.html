@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>animation marquee</title>
+  <style>
+    @keyframes mq {
+      from {
+        left: 100%;
+        transform: translateX(0);
+      }
+      to {
+        left: 0%;
+        transform: translateX(-100%);
+      }
+    }
+
+    div {
+
+      border: 1px solid blue;
+      position: relative;
+      height: 21px;
+    }
+    marquee {
+
+      border: 1px solid green;
+    }
+    div > span {
+      position: absolute;
+      animation: mq 20s 9999 linear;
+    }
+    span {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div><span>icbc</span></div>
+  <marquee><span>icbc</span></marquee>
+</body>
+</html>
