@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>公转</title>
+  <style>
+    @keyframes rr {
+   form {
+    transform: rotatez(0deg);
+  }
+  to {
+    transform: rotatez(360deg);
+  } 
+}
+@keyframes gg {
+  form {
+    transform: rotatez(0deg);
+  }
+  to {
+    transform: rotatez(-360deg);
+  }
+}
+.s1 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  animation: rr 3s 9999 linear reverse;
+ 
+}
+section {
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue;
+  border-radius: 9999px;
+  animation: rr 3s 9999 linear;
+  xtransition: 2s;
+  margin: 100px auto;
+}
+@keyframes rr2 {
+  from {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+.s2 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin: 200px auto;
+  xtransform-origin: 100px 100px;
+  animation: rr2 3s 9999 linear;
+}
+@keyframes rr3 {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 200px;
+  }
+}
+@keyframes rr4 {
+  from {
+    margin-top: 20px;
+  }
+  to {
+    margin-top: 220px;
+  }
+}
+.s3 {
+  width: 50px;
+  height: 50px;
+  background-color: #f00;
+  position: relative;
+  top: 50px;
+  left: 250px;
+  margin-bottom: 500px;
+  animation: rr3 1s 9999 cubic-bezier(.36,0,.64,1) alternate,
+             rr4 1s -.5s 9999 cubic-bezier(.36,0,.64,1) alternate;
+}
+  </style>
+</head>
+<body>
+  <h2>父元素旋转,子元素反向</h2>
+  <section>
+     <div class="s1">
+    </div>
+  </section>
+  <h2>元素旋转,再偏移反转</h2>
+  <div class="s2">
+  </div>
+  <h2>元素在x轴做正弦运动,y轴做余弦运动</h2>
+  <div class="s3"></div>
+
+</body>
+</html>
