@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hover-change-</title>
+  <style>
+    * {
+      box-shadow: 0 0 1px blue;
+    }
+    .container {
+      position: relative;
+      width: 500px;
+     xborder: 1px solid gold;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      /* 给里面元素的父元素加上border,会使鼠标移出来的时候触发hover*/
+      xborder: 2px solid red;
+      /* 加上负的padding虽然可以避免触发border带来的效果,但是不灵 */
+      xpadding: -4px;
+      width: 300px;
+      justify-content: flex-end;
+      float: right;
+    }
+    li {
+      display: inline-block;
+      border: 1px solid red;
+      padding: 0 20px;
+      background-color: #fff;
+      transition: background-color 0s 5s; 
+    }
+    li:first-child {
+      background-color: red;
+    }
+    ul:hover > li {
+      transition: none;
+      background-color: #fff;
+    }
+    ul > li:hover {
+      background-color: yellow;
+      transition: none;
+    }
+    .container li > div {
+      position: absolute;
+      top: 21px;
+      left: 0;
+      visibility: hidden;
+      transition: visibility 0s 5s;
+      width: 300px;
+      height: 300px;
+      xborder: 1px solid red;
+    }
+    ul li:first-child > div {
+      visibility: visible;
+    }
+    .container > ul:hover div {
+      visibility: hidden;
+      transition: none;
+    }
+    .container > ul > li:hover > div {
+      visibility: visible;
+      transition: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <ul>
+      <li>aaa
+        <div>content1</div>
+      </li>
+      <li>bbb
+        <div>content2</div>
+      </li>
+      <li>ccc
+        <div>content3</div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html> 

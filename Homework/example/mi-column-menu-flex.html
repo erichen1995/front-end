@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小米列式菜单flex写法</title>
+  <style>
+    * {
+      background-color: rgba(0, 0, 0, .1);
+      box-shadow: inset 0 0 1px red;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-flow: column wrap;
+      height: 200px;
+      align-content: flex-start;
+      float: left;
+    }
+    li {
+      width: 200px;
+      height: 50px;
+      background-color: #fff;
+    }
+    /* 
+      使用float时,父元素只会包住第一列
+      所以无法使用父元素的底色
+      第一种方法是让最后一个子元素拉满
+      适用于没有边框的场景
+    */
+    xul li:last-child {
+      flex-grow: 1;
+      background-color: #fff;
+    }
+    /* 
+      第二种方法是给父元素添加伪元素
+      让它的颜色拉满
+      比一种方法好,可以用边框
+    */
+    ul::after {
+      content: "";
+      background-color: #fff;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+    <li>lorem1</li>
+  </ul>
+</body>
+</html>

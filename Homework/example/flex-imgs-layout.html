@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片弹性布局</title>
+  <style>
+    * {
+      box-shadow: inset 0 0 1px red;
+    }
+    section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    div {
+      margin: 5px;
+    }
+    span {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <!-- 此处代码可用js生成 -->
+    <!-- 此处需要让padding-bottom的高度等于照片的高度,用来撑起元素,这样元素在未加载时,也会占位.
+         padding-bottom的高度等于照片的高度的前提下,利用子元素的高度写成百分比时是按父元素的宽度计算.
+         所以padding-bottom = img-height / img-width * 100%;
+         
+         flex-grow放大是按图片的宽度比例放大,所以图片不会被裁剪
+    -->
+
+    <div style="flex-grow: 188; width:188px;"><span style="padding-bottom: calc(200 / 188 * 100%);"></span></div>
+    <div style="flex-grow: 250; width:250px;"><span style="padding-bottom: calc(200 / 250 * 100%);"></span></div>
+    <div style="flex-grow: 360; width:360px;"><span style="padding-bottom: calc(200 / 360 * 100%);"></span></div>
+    <div style="flex-grow: 150; width:150px;"><span style="padding-bottom: calc(200 / 150 * 100%);"></span></div>
+    <div style="flex-grow: 428; width:428px;"><span style="padding-bottom: calc(200 / 428 * 100%);"></span></div>
+    <div style="flex-grow: 177; width:177px;"><span style="padding-bottom: calc(200 / 177 * 100%);"></span></div>
+    <div style="flex-grow: 299; width:299px;"><span style="padding-bottom: calc(200 / 299 * 100%);"></span></div>
+    <div style="flex-grow: 411; width:411px;"><span style="padding-bottom: calc(200 / 411 * 100%);"></span></div>
+    <div style="flex-grow: 250; width:250px;"><span style="padding-bottom: calc(200 / 250 * 100%);"></span></div>
+    <div style="flex-grow: 150; width:150px;"><span style="padding-bottom: calc(200 / 150 * 100%);"></span></div>
+    <div style="flex-grow: 428; width:428px;"><span style="padding-bottom: calc(200 / 428 * 100%);"></span></div>
+    <div style="flex-grow: 360; width:360px;"><span style="padding-bottom: calc(200 / 360 * 100%);"></span></div>
+    <div style="flex-grow: 411; width:411px;"><span style="padding-bottom: calc(200 / 411 * 100%);"></span></div>
+    <div style="flex-grow: 188; width:188px;"><span style="padding-bottom: calc(200 / 188 * 100%);"></span></div>
+    <div style="flex-grow: 299; width:299px;"><span style="padding-bottom: calc(200 / 299 * 100%);"></span></div>
+    <div style="flex-grow: 299; width:299px;"><span style="padding-bottom: calc(200 / 299 * 100%);"></span></div>
+    <div style="flex-grow: 177; width:177px;"><span style="padding-bottom: calc(200 / 177 * 100%);"></span></div>
+    <div style="flex-grow: 250; width:250px;"><span style="padding-bottom: calc(200 / 250 * 100%);"></span></div>
+    <div style="flex-grow: 177; width:177px;"><span style="padding-bottom: calc(200 / 177 * 100%);"></span></div>
+    <div style="flex-grow: 150; width:150px;"><span style="padding-bottom: calc(200 / 150 * 100%);"></span></div>
+    <div style="flex-grow: 411; width:411px;"><span style="padding-bottom: calc(200 / 411 * 100%);"></span></div>
+    <div style="flex-grow: 188; width:188px;"><span style="padding-bottom: calc(200 / 188 * 100%);"></span></div>
+    <div style="flex-grow: 428; width:428px;"><span style="padding-bottom: calc(200 / 428 * 100%);"></span></div>
+    <div style="flex-grow: 250; width:250px;"><span style="padding-bottom: calc(200 / 250 * 100%);"></span></div>
+    <div style="flex-grow: 180; width:180px;"><span style="padding-bottom: calc(200 / 180 * 100%);"></span></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+    <div style="width:360px; height: 0;"></div>
+  </section>
+</body>
+</html>
