@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var a = prompt("please input a:")
+    var b = prompt("please input b:")
+    var c = prompt("please input c:")
+//    var d = prompt("please input d:")
+//    var e = prompt("please input e:")
+//    var f = prompt("please input f:")
+    
+//    var x = (c * e - b * f) / (a * e - b * d)
+//   var y = (c * d - a * f) / (b * d - a * e)
+
+    var delta = b * b - 4 * a *c
+    if(delta > 0) {
+      var x1 = (-b + Math.sqrt(delta)) / (2 * a)
+      var x2 = (-b - Math.sqrt(delta)) / (2 * a)
+      console.log("x1 = ", x1)
+      console.log("x2 = ", x2)
+    } else if (delta == 0) {
+      var x = (-b) / (2 * a)
+      console.log("x = ", x)
+    } else {
+      console.log("无解")
+    }
+  </script>
+</body>
+</html>
